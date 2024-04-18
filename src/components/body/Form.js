@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import Box from '@mui/material/Box';
-import { Button, TextField } from '@mui/material';
 import { URL } from '../../api/client'
 import { useLangContext } from "../../context/ContextLang";
 import useLang from "../../hooks/langHook";
@@ -96,78 +94,82 @@ const Form = () => {
     const responseMessage = () => {
 
         if( dResponse >= 200 & dResponse < 300 ){
-            return  <div className='notification success'>
-                                <p id='notMsg'>Message was sent!</p>
-                                <span onClick={handleClear}>X</span></div>
+            return  <div className="notify-box notify-border form b-green bg-green">
+                                <div className=""> </div>
+                                <div className="white">
+                                    <p id='notMsg' className="">Message was sent!</p>
+                                </div>
+                                <span className="pointer padding-right white" onClick={handleClear}>x</span>
+                                </div>
         } else if ( dResponse >= 400 & dResponse < 500 ){
-            return <div className='notification err'>
-                                <p id='notMsg'> Error {dResponse} try again.</p>
-                                <span onClick={handleClear}>x</span></div>
+            return <div className='notify-box notify-border form b-red bg-red'>
+                                <div className=""> </div>
+                                <div className="white">
+                                    <p id='notMsg'> Error {dResponse} try again.</p>
+                                </div>
+                                <span className="pointer padding-right white" onClick={handleClear}>x</span></div>
         } else if ( dResponse >= 500 & dResponse < 600 ){
-            return <div className='notification err'>
-                                <p id='notMsg'>
-                                Error {dResponse} Couldn't reach server.</p>
-                                <span onClick={handleClear}>x</span></div>
+            return <div className='notify-box notify-border form b-red bg-red'>
+                                <div className=""> </div>
+                                <div className="white">
+                                    <p id='notMsg'> Error {dResponse} Couldn't reach server.</p>
+                                </div>
+                                <span className="pointer padding-right white" onClick={handleClear}>x</span></div>
         }
         else{
             return <></>
         }
     }
 
-    return  <Box
-            component="form"
-            className='form-box'
+    return  <form
             onSubmit={handleSubmit}
-            sx={{
-            '& > :not(style)': { m: 1, width: '25ch' },
-            }}
-            noValidate
-            autoComplete="off"
-            >
+            className="form">
                 { responseMessage() }
                 <p className='error'>
                     { errorMessage?.email || '' ? `${errorMessage.email}` : `` }
                 </p>
-                <TextField
-                id="email"
-                type='email'
-                className='form'
-                label={data['hire']['contact']}
-                variant="outlined"
-                value={inputValue.email === null ? '' : inputValue.email}
-                onChange={handleChange}
-                required/>
 
-                <TextField
-                id="subject"
-                className='form'
-                label={data['hire']['subj']}
-                value={inputValue.subject === null ? '' : inputValue.subject}
-                onChange={handleChange}
-                variant="outlined" />
+                <label className="green">
+                    <input
+                    id="email"
+                    type="email"
+                    className="display-block width-100 margin-input"
+                    placeholder={data['hire']['contact']}
+                    value={inputValue.email === null ? '' : inputValue.email}
+                    onChange={handleChange}
+                    required/>
+                </label>
 
-                <p className='error'>
+                <label className="green">
+                    <input
+                    id="subject"
+                    className="display-block width-100 margin-input"
+                    placeholder={data['hire']['subj']}
+                    value={inputValue.subject === null ? '' : inputValue.subject}
+                    onChange={handleChange}/>
+                </label>
+
+                <p className="error">
                     { errorMessage?.message || '' ? `${errorMessage.message}` : `` }
                 </p>
-                <TextField
-                id="message"
-                className='form'
-                label={data['hire']['message']}
-                value={inputValue.message === null ? '' : inputValue.message}
-                onChange={handleChange}
-                variant="outlined"
-                multiline
-                required
-                InputProps={{
-                    rows: 3
-                }} />
-                <Button
-                id='submit-btn'
-                type='submit'
-                variant="outlined"
-                className='form'
-                color="primary">{data['hire']['button']}</Button>
-            </Box>
+                <label className="green">
+                    <textarea
+                    id="message"
+                    maxLength={300}
+                    rows={7}
+                    className="display-block width-100 margin-input text-area"
+                    placeholder={data['hire']['holder']}
+                    value={inputValue.message === null ? '' : inputValue.message}
+                    onChange={handleChange}
+                    required />
+                </label>
+
+                <input
+                id="submit-btn"
+                type="submit"
+                className="button width-100 white"
+                value = {data['hire']['button']}/>
+            </form>
 }
 
 export default Form;

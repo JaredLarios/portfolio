@@ -27,8 +27,11 @@ h1, h2, h3, h4, h5, h6, p {
 .gray {
   color: #777777;
 }
+.grey {
+  color: #2D2E32;
+}
 .green {
-  color: #4dba87 !important;
+  color: #4dba87;
 }
 .flex {
   display: flex;
@@ -44,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
 section {
   padding: 5rem 5rem;
 }
-button {
+button, .button {
   border: none;
   border-radius: 0.2rem;
   padding: 0.5rem 1rem;
@@ -54,7 +57,7 @@ button {
   background-color: #4dba87;
   cursor: pointer;
 }
-.pointer :hover {
+.pointer:hover {
   cursor: pointer;
 }
 
@@ -158,6 +161,66 @@ footer ul li {
   margin-left: 1rem;
 }
 
+/* Form */
+
+.form-header {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.display-block {
+  display: block;
+}
+.width-100 {
+  width: 100%;
+  padding: .5rem .8rem .5rem .8rem;
+}
+.margin-input{
+  margin: .9vw 0;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+} 
+.text-area {
+  resize: vertical;
+}
+
+/* Form Notifications */
+.notify-box {
+  border: 2px solid;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}
+.notify-border {
+  border-radius: 5px;
+}
+.padding-right {
+  padding-right: 15px;
+}
+.bg-green {
+  background-color: #4dba87;
+}
+.bg-red {
+  background-color: #ba4d4d;
+}
+.where {
+  border: 1px solid;
+}
+.b-red {
+  border-color: #ba4d4d;
+}
+.b-green {
+  border-color: #4dba87
+}
+.b-blue {
+  border-color: blue;
+}
+.b-yellow {
+  border-color: yellow;
+}
+
 /* --------- Responsive Design --------- */
 @media (max-width: 768px) {
   .flex {
@@ -188,6 +251,10 @@ footer ul li {
   .about-card div {
     flex-direction: row !important;
     justify-content: space-between !important;
+  }
+  /* Form */
+  .form {
+    width: 100%;
   }
   /* Footer */
   footer ul {

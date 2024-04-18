@@ -31,6 +31,7 @@
             "subj": "Asunto",
             "message": "Mensaje",
             "button": "Enviar Mensaje",
+            "holder": "Escribe un mensaje...",
             "social": {
                 "facebook": "https://www.facebook.com/jared.larios.9/",
                 "instagram": "https://www.instagram.com/jedlarios98/",
@@ -71,6 +72,7 @@
             "subj": "Subject",
             "message": "message",
             "button": "Send Message",
+            "holder": "Write a message here...",
             "social": {
                 "facebook": "https://www.facebook.com/jared.larios.9/",
                 "instagram": "https://www.instagram.com/jedlarios98/",

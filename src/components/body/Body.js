@@ -34,13 +34,13 @@ const Body = () => {
                 <section id="about" className="dark-bg">
                     <div className="flex">
                         <div className="flex-full">
-                            { data ? data.map((element) => (
+                            { data ? data.map((element, index) => (
                                 <AboutCard 
-                                key={data._id}
+                                key={index}
                                 title={element.position}
-                                icon={IoLogoPython}
+                                icon={element.business}
                                 description={element.description}
-                                projects={7}
+                                projects={[element?.startDate, element?.endDate]}
                                 />
                             )): 
                             <AboutCard
@@ -48,7 +48,7 @@ const Body = () => {
                                 title="Python"
                                 icon={IoLogoPython}
                                 description="I create design  products with unique ideas."
-                                projects={7}
+                                projects={12/24/2024}
                                 />
                             }
                         </div>
@@ -63,9 +63,13 @@ const Body = () => {
                     </div>
                 </section>
                 <section id="contact" className="dark-bg">
-                    <h1 className="white">Contact Me!</h1>
                     <div className="flex">
-                        <Form />
+                        <div className="flex-full form">
+                            <h1 className="white form-header">Contact Me!</h1>
+                        </div>
+                        <div className="flex-full form">
+                            <Form />
+                        </div>
                     </div>
                 </section>
 
