@@ -13,12 +13,12 @@ const Navbar = () => {
     return ( 
         <nav className="flex light-bg justify-space">
             <div className="logo white">
-                <a href="/#/">Jared Larios</a>
+                <a href="/portfolio/">Jared Larios</a>
             </div>
 
             <ul className="flex white">
                 <li className="green">
-                            <a href="/#/">{"< " + data["sys"]["home"] + " />"}</a>
+                            <a href="/portfolio/">{"< " + data["sys"]["home"] + " />"}</a>
                 </li>
                 <li className="green">
                     <a className="pointer">
