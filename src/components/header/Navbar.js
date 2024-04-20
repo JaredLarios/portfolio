@@ -4,17 +4,21 @@ import useLang from "../../hooks/langHook";
 
 const Navbar = () => {
     const lang = useLangContext();
-    const [data] = useLang(lang.languages)
+    const [data] = useLang(lang.languages);
+
+    const handleLinkClick = (event) => {
+        window.location.hash = '/app/#about';
+    };
 
     return ( 
         <nav className="flex light-bg justify-space">
             <div className="logo white">
-                <a href="/">Jared Larios</a>
+                <a href="/#/">Jared Larios</a>
             </div>
 
             <ul className="flex white">
                 <li className="green">
-                            <a href="/">{"< " + data["sys"]["home"] + " />"}</a>
+                            <a href="/#/">{"< " + data["sys"]["home"] + " />"}</a>
                 </li>
                 <li className="green">
                     <a className="pointer">
@@ -24,9 +28,10 @@ const Navbar = () => {
                     </span>
                     </a>
                 </li>
+                {/*
                 <li>
-                    <a href="/#about">{data["sys"]["about"]}</a>
-                </li>
+                    <a onClick={handleLinkClick} >{data["sys"]["about"]}</a>
+                </li> */}
             </ul>
         </nav>
     );

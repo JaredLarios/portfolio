@@ -15,7 +15,7 @@ const Header = () => {
                         <h1 className="white">{data["header"]["title"]}</h1>
                         <h1 className="white">{data["header"]["title2"]}</h1>
                         <p className="gray">{data["header"]["subTitle"]}</p>
-                        <a className="green" href="#contact">{data["hire"]["title"]}</a>
+                        {/* <a className="green" href="#contact">{data["hire"]["title"]}</a> */}
                     </div>
                     <img src={me} alt='' width={450}></img>
                 </div>
