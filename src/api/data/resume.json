@@ -1,32 +1,25 @@
 {
     "spa": {
         "title": "Desarrollador Web y de Software",
-        "who": {
-            "title" : "¿Quien soy?",
-            "content": "Soy desarrollador Full Stack. Me gusta jugar Video Juegos, escuchar música, y ver películas. Estudio Desarrollo Web y de Software."
+        "header": {
+            "title": "Hablar es fácil.",
+            "title2": "¡Muestrame tu código!",
+            "subTitle" : "Yo desarrollo y programo cosas sencillas, y amo lo que hago."
         },
-        "skills": {
-            "title": "Habilidades",
-            "content": "Proactivo, autodidacta, comunicación asertiva y mentalidad orientada a resolución de problemas."
+        "bio": {
+            "type": "Sobre Mi",
+            "title": "Hola, soy Jared Larios",
+            "subTitle": "Programar no solo se trata de cómo se ve, ¡sino de cómo funciona!",
+            "text": "He seguido mi sueño de ser un desarrollador. Soy un tatlentoso desarrollador Full-Stack Jr con experiencia en TI. Al trabajar como freelancer, He tenido oportunidad de desarrollar mis habilidades al colaborar con pequeñas empresas y al crear contenido útil para las mismas.",
+            "text2":"Soy proactivo, autodidacta, curioso, innovador y constantemente busco como poner a prueba mis habilidades."
         },
-        "technologies": {
-            "title": "Tecnologías",
-            "content": ""
-        },
-        "progLang": {
-            "title": "Lenguajes de Programación",
-            "contet": ""
-        },
-        "framework": {
-            "title": "Librerias y Frameworks",
-            "content": ""
-        },
-        "db": {
-            "title": "Bases de Datos",
-            "contet": ""
+        "sys": {
+            "loader" : "Cargando...",
+            "home": "Inicio",
+            "about": "Sobre Mi"
         },
         "hire": {
-            "title": "¡Contratáme!",
+            "title": "¡Contáctame!",
             "contact": "Correo",
             "subj": "Asunto",
             "message": "Mensaje",
@@ -42,32 +35,25 @@
     },
     "eng": {
         "title": "Web and Software Developer",
-        "who": {
-            "title": "Who I am?",
-            "content": "I'm a Full Stack Developer. I love to play video games, listen to music, and watch movies. I'm studying for a Bachelor's Degree in Applied Technology. (Web and software development)"
+        "header": {
+            "title": "Talk is cheap.",
+            "title2": "Show me the code!",
+            "subTitle" : "I develop and code dope and useful things, and I love what I do."
         },
-        "skills": {
-            "title": "Skills",
-            "content": "Proactive, self-reliant, assertive communication and solve problem mindset."
+        "bio": {
+            "type":"Introduce",
+            "title": "Hello, I'm Jared Larios",
+            "subTitle": "Code is not just what it looks like. Code is how it works!",
+            "text": "I have proceeded my dream to be a developer as it has been my lifelong ambition. I am a talented Full-Stack developer Jr with a TI background. During my time working as a freelancer, I had the opportunity to enhace my expertise by collaborating with different small business and by creating useful content for business.",
+            "text2":"I am proactive, self-reliant, autodidactic, quietly curious, innovative and constantly challenging my skills."
         },
-        "technologies": {
-            "title": "Technologies",
-            "content": ""
-        },
-        "progLang": {
-            "title": "Programming Languages",
-            "content": ""
-        },
-        "framework": {
-            "title": "Frameworks and Libraries",
-            "content": ""
-        },
-        "db": {
-            "title": "DataBases",
-            "content": ""
+        "sys": {
+            "loader" : "Loading...",
+            "home": "Home",
+            "about": "About Me"
         },
         "hire": {
-            "title": "Hire Me!",
+            "title": "Contact Me!",
             "contact": "E-mail",
             "subj": "Subject",
             "message": "message",

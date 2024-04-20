@@ -12,10 +12,10 @@ const Header = () => {
                 <div className="header flex light-bg">
                     <div>
                         <button>{data["title"]}</button>
-                        <h1 className="white">Talk is cheap.</h1>
-                        <h1 className="white">Show me the code!</h1>
-                        <p className="gray">I design and code beautiful simple things, and I love what I do.</p>
-                        <a className="green" href="#contact">Let&#39;s chat!</a>
+                        <h1 className="white">{data["header"]["title"]}</h1>
+                        <h1 className="white">{data["header"]["title2"]}</h1>
+                        <p className="gray">{data["header"]["subTitle"]}</p>
+                        <a className="green" href="#contact">{data["hire"]["title"]}</a>
                     </div>
                     <img src={me} alt='' width={450}></img>
                 </div>
