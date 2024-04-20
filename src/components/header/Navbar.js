@@ -28,7 +28,9 @@ const Navbar = () => {
                     </span>
                     </a>
                 </li>
+
                 {/*
+                TODO: FIX BUG TO GET INTO IDS OF HTML OR JSX
                 <li>
                     <a onClick={handleLinkClick} >{data["sys"]["about"]}</a>
                 </li> */}
