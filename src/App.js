@@ -7,6 +7,7 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
+          <Route path="/header" element={<Home />} />
         </Route>
       </Routes>
     </HashRouter>

@@ -1,13 +1,13 @@
 const AboutCard = ({title, icon, description, projects}) => {
     return (
-        <div className="light-bg about-card">
-            <div className="flex justify-space">
-                <h3 className="green">{title}</h3>
+        <div className="card">
+            <div className="card-title">
+                <h3>{title}</h3>
                 {/* <icon className="green" width={28} height={28} /> */}
-                <p className="green">{icon}</p>
+                <p>{icon}</p>
             </div>
-            <p className="white">{description}</p>
-            <span className="gray">{
+            <p>{description}</p>
+            <span className="card-date">{
                 new Date(`${projects[0]}`).toLocaleDateString() }-
                 {new Date(`${projects[1]}`).toLocaleDateString() }
                 </span>

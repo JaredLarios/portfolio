@@ -1,14 +1,14 @@
 {
     "spa": {
-        "title": "Desarrollador Web y de Software",
+        "title": "Desarrollador",
         "header": {
-            "title": "Hablar es fácil.",
-            "title2": "¡Muestrame tu código!",
+            "title": "Yo soy Jared,",
+            "title2": "Desarrollador de Software",
             "subTitle" : "Yo desarrollo y programo cosas sencillas, y amo lo que hago."
         },
         "bio": {
             "type": "Sobre Mi",
-            "title": "Hola, soy Jared Larios",
+            "title": " ",
             "subTitle": "Programar no solo se trata de cómo se ve, ¡sino de cómo funciona!",
             "text": "He seguido mi sueño de ser un desarrollador. Soy un tatlentoso desarrollador Full-Stack Jr con experiencia en TI. Al trabajar como freelancer, He tenido oportunidad de desarrollar mis habilidades al colaborar con pequeñas empresas y al crear contenido útil para las mismas.",
             "text2":"Soy proactivo, autodidacta, curioso, innovador y constantemente busco como poner a prueba mis habilidades."
@@ -34,10 +34,10 @@
         }
     },
     "eng": {
-        "title": "Web and Software Developer",
+        "title": "Developer",
         "header": {
-            "title": "Talk is cheap.",
-            "title2": "Show me the code!",
+            "title": "I'm Jared,",
+            "title2": "Web and Software Developer",
             "subTitle" : "I develop and code dope and useful things, and I love what I do."
         },
         "bio": {

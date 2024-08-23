@@ -11,20 +11,20 @@ const Navbar = () => {
     };
 
     return ( 
-        <nav className="flex light-bg justify-space">
-            <div className="logo white">
-                <a href="/portfolio/">Jared Larios</a>
+        <nav>
+            <div className="logo">
+                <a href="/portfolio/"><span>{"C:"}</span>\Jared Larios {">"}</a>
             </div>
 
-            <ul className="flex white">
-                <li className="green">
-                            <a href="/portfolio/">{"< " + data["sys"]["home"] + " />"}</a>
+            <ul className="menu">
+                <li>
+                            <a href="/portfolio/">{data["sys"]["home"]}</a>
                 </li>
-                <li className="green">
-                    <a className="pointer">
+                <li>
+                    <a>
                     <span onClick={lang.click} style={{ textTransform: 'capitalize' }}>
-                        {"< "} <IoLanguageSharp />
-                        {lang.languages} {" />"}
+                        <IoLanguageSharp />
+                        {lang.languages}
                     </span>
                     </a>
                 </li>

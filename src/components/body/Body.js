@@ -33,7 +33,7 @@ const Body = () => {
     return  <>
                 <section id="about" className="dark-bg">
                     <div className="flex">
-                        <div className="flex-full">
+                        <div className="card-container">
                             { data ? data.map((element, index) => (
                                 <AboutCard 
                                 key={index}
