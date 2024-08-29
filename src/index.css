@@ -84,13 +84,14 @@ header img {
 
 /*--------------------------------- Card ---------------------------------*/
 .card-container {
-  border: solid green 1px;
-  margin: 0;
-  padding: 0;
+  margin: 20px 0;
 }
 
 .card {
-  border: solid red 1px;
+  background-color: var(--devider);
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 1rem;
 }
 
 .card h3 {
@@ -123,5 +124,11 @@ header img {
   header img {
     align-self: end;
     width: 400px;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80%;
+    margin: 25px auto;
   }
 }
